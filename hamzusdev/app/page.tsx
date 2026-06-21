@@ -1,23 +1,23 @@
+import type { Metadata } from "next";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Testimonial from "@/components/Testimonial";
 import CTA from "@/components/CTA";
 import FadeIn from "@/components/FadeIn";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Testimonial from "@/components/Testimonial";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Hamza Safsafi | Full-Stack Developer Portfolio",
-  description: "Explore Hamza Safsai's portfolio showcasing modular systems, backend APIs, headless setups, and interactive web/mobile products.",
+  description: "Explore Hamza Safsafi's portfolio showcasing modular systems, backend APIs, headless setups, and interactive web/mobile products.",
   openGraph: {
-    title: "Hamza Safsai | Full-Stack Developer Portfolio",
-    description: "Explore Hamza Safsai's portfolio showcasing modular systems, backend APIs, headless setups, and interactive web/mobile products.",
+    title: "Hamza Safsafi | Full-Stack Developer Portfolio",
+    description: "Explore Hamza Safsafi's portfolio showcasing modular systems, backend APIs, headless setups, and interactive web/mobile products.",
     images: [
       {
         url: "/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "Hamza Safsai Portfolio Showcase",
+        alt: "Hamza Safsafi Portfolio Showcase",
       },
     ],
   },
