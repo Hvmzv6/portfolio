@@ -1,18 +1,18 @@
+import { Award, FileText, Layers, Terminal } from "lucide-react";
 import type { Metadata } from "next";
-import { FileText, Award, Layers, Terminal } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Origin Profile | About Hamza Safsai",
-  description: "Learn about Hamza Safsai's background, full-stack history, development principles, and specs of engineered digital architectures.",
+  title: "Origin Profile | About Hamza Safsafi",
+  description: "Learn about Hamza Safsafi's background, full-stack history, development principles, and specs of engineered digital architectures.",
   openGraph: {
-    title: "Origin Profile | About Hamza Safsai",
-    description: "Learn about Hamza Safsai's background, full-stack history, development principles, and specs of engineered digital architectures.",
+    title: "Origin Profile | About Hamza Safsafi",
+    description: "Learn about Hamza Safsafi's background, full-stack history, development principles, and specs of engineered digital architectures.",
     images: [
       {
         url: "/og-about.jpg",
         width: 1200,
         height: 630,
-        alt: "Hamza Safsai - Origin Profile",
+        alt: "Hamza Safsafi - Origin Profile",
       },
     ],
   },
@@ -51,7 +51,7 @@ export default function AboutPage() {
               Origin // System Profile
             </span>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-              Hamza Safsai
+              Hamza Safsafi
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground font-light font-mono">
               &lt;Engineering digital products & web architectures /&gt;

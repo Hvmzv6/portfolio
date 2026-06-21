@@ -14,7 +14,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-8xl font-bold tracking-tight leading-none">
-          Hamza Safsai
+          Hamza Safsafi
         </h1>
 
         <h2 className="text-2xl md:text-4xl font-mono text-muted-foreground font-light">
