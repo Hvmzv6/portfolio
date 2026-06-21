@@ -47,7 +47,7 @@ export default function ContactPageClient() {
     setErrors({});
     setStatus("submitting");
 
-    const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID || "YOUR_FORM_ID";
+    const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
 
     try {
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
@@ -151,9 +151,8 @@ export default function ContactPageClient() {
                   setForm({ ...form, name: e.target.value });
                   if (errors.name) setErrors({ ...errors, name: undefined });
                 }}
-                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none ${
-                  errors.name ? "border-red-500" : "border-border"
-                }`}
+                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none ${errors.name ? "border-red-500" : "border-border"
+                  }`}
                 placeholder="e.g. HAL 9000"
               />
               {errors.name && (
@@ -173,9 +172,8 @@ export default function ContactPageClient() {
                   setForm({ ...form, email: e.target.value });
                   if (errors.email) setErrors({ ...errors, email: undefined });
                 }}
-                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none ${
-                  errors.email ? "border-red-500" : "border-border"
-                }`}
+                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none ${errors.email ? "border-red-500" : "border-border"
+                  }`}
                 placeholder="e.g. hal@discovery.one"
               />
               {errors.email && (
@@ -195,9 +193,8 @@ export default function ContactPageClient() {
                   setForm({ ...form, message: e.target.value });
                   if (errors.message) setErrors({ ...errors, message: undefined });
                 }}
-                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none resize-none ${
-                  errors.message ? "border-red-500" : "border-border"
-                }`}
+                className={`w-full bg-background border px-4 py-3 text-sm focus:outline-none focus:border-accent transition-colors rounded-none resize-none ${errors.message ? "border-red-500" : "border-border"
+                  }`}
                 placeholder="State your objectives..."
               />
               {errors.message && (
