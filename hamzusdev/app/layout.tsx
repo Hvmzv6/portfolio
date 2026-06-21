@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import Navbar from "@/components/Navbar";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import type { Metadata } from "next";
+import { Geist_Mono, Inter } from "next/font/google";
+import "./globals.css";
 const inter = Inter({
   variable: "--font-inter-google",
   subsets: ["latin"],
@@ -15,20 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hamzus.dev"),
+  metadataBase: new URL("https://portfolio-hamza.me"),
   title: {
-    default: "Hamza Safsai | Full-Stack Developer",
-    template: "%s | Hamza Safsai",
+    default: "Hamza Safsafi | Full-Stack Developer",
+    template: "%s | Hamza Safsafi",
   },
-  description: "Software engineering portfolio of Hamza Safsai, showcasing premium web architectures & mobile interfaces.",
+  description: "Software engineering portfolio of Hamza Safsafi, showcasing premium web architectures & mobile interfaces.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hamzus.dev",
-    siteName: "Hamza Safsai Portfolio",
+    url: "https://portfolio-hamza.me",
+    siteName: "Hamza Safsafi Portfolio",
   },
 };
 
@@ -49,6 +49,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-XDN6QEV6DH" />
     </html>
   );
 }
